@@ -1,13 +1,35 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>index_us</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content" menuId="m1" side="start">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">index_us</ion-title>
+      <ion-title>Menu Content</ion-title>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+  <ion-content class="ion-padding">
+    This is the menu content.
+  </ion-content>
+</ion-menu>
+
+<!-- Contenido principal -->
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <!-- Botón del menú a la izquierda -->
+      <ion-buttons slot="start">
+        <ion-menu-button menu="m1"></ion-menu-button>
+      </ion-buttons>
+
+      <!-- Título centrado -->
+      <ion-title class="ion-text-center">UrbanMove</ion-title>
+      <!-- Botón de perfil al final de la barra -->
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/perfil-us']">
+          <ion-icon slot="icon-only" name="person-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <h2 class="ion-text-center">Viajes disponibles</h2>
+  </ion-content>
+</div>
