@@ -72,7 +72,11 @@ const routes: Routes = [
   {
     path: 'crear-viaje-uc',
     loadChildren: () => import('./pages/crear-viaje-uc/crear-viaje-uc.module').then( m => m.CrearViajeUcPageModule)
+  },  {
+    path: 'registro',
+    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
   },
+
 ];
 
 @NgModule({
