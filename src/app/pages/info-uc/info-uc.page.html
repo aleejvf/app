@@ -1,13 +1,72 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>info_uc</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">info_uc</ion-title>
+<ion-menu contentId="main-content" menuId="m9" side="start">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menú</ion-title>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+  
+  <ion-content class="ion-padding">
+    <!-- Botones del menú -->
+    <ion-list>
+      <!-- Botón de Viajes -->
+      <ion-item button [routerLink]="['/index-us']">
+        <ion-label>Viajes</ion-label>
+      </ion-item>
+
+            <!-- Botón de Viajes -->
+      <ion-item button [routerLink]="['/solicitud-us']">
+        <ion-label>Viajes solicitados</ion-label>
+      </ion-item>
+
+      <!-- Botón de Historial -->
+      <ion-item button [routerLink]="['/viajes-us']">
+        <ion-label>Historial de viajes</ion-label>
+      </ion-item>
+
+      <!-- Botón de Seguridad -->
+      <ion-item button [routerLink]="['/seguridad-us']">
+        <ion-label>Seguridad</ion-label>
+      </ion-item>
+
+      <!-- Botón de Configuraciones -->
+      <ion-item button [routerLink]="['/confi-us']">
+        <ion-label>Configuraciones</ion-label>
+      </ion-item>
+
+      <!-- Botón de Modo Conductor con color diferente -->
+      <ion-item button color="secondary" class="driver-mode-button" lines="none" [routerLink]="['/info-uc']">
+        <ion-label>Modo Conductor</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+<!-- Contenido principal -->
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <!-- Botón del menú a la izquierda -->
+      <ion-buttons slot="start">
+        <ion-menu-button menu="m9"></ion-menu-button>
+      </ion-buttons>
+
+      <!-- Título centrado -->
+      <ion-title class="ion-text-center">UrbanMove</ion-title>
+      <!-- Botón de perfil al final de la barra -->
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/perfil-us']">
+          <ion-icon slot="icon-only" name="person-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+<!-- Termina el header -->
+<!-- comienza el contenido -->
+
+  <ion-content class="ion-padding">
+    <h2 class="ion-text-center">Restriccion de conductor</h2>
+    
+    
+  </ion-content>
+</div>

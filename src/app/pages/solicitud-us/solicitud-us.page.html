@@ -1,4 +1,4 @@
-<ion-menu contentId="main-content" menuId="m6" side="start">
+<ion-menu contentId="main-content" menuId="m2" side="start">
   <ion-header>
     <ion-toolbar color="primary">
       <ion-title>Menú</ion-title>
@@ -48,7 +48,7 @@
     <ion-toolbar>
       <!-- Botón del menú a la izquierda -->
       <ion-buttons slot="start">
-        <ion-menu-button menu="m6"></ion-menu-button>
+        <ion-menu-button menu="m2"></ion-menu-button>
       </ion-buttons>
 
       <!-- Título centrado -->
@@ -65,51 +65,65 @@
 <!-- comienza el contenido -->
 
   <ion-content class="ion-padding">
-    <div class="profile-container">
-    <!-- Imagen de perfil en círculo con fondo gris -->
-    <div class="profile-image-container">
-      <div class="profile-image-wrapper">
-        <img src="assets/img/profile-placeholder.png" alt="Foto de perfil" class="profile-image">
-      </div>
-    </div>
-  
-      <!-- Información del perfil -->
-      <ion-card class="profile-card">
+    <h2 class="ion-text-center">Viaje solicitado</h2>
+    <!-- Lista de viajes -->
+    
+
+    
+      <!-- Información del Viaje -->
+      <ion-card>
         <ion-card-header>
-          <ion-text color="primary">
-            <h2 class="ion-text-center">Perfil de Usuario</h2>
-          </ion-text>
+          <ion-card-title>Información del Viaje</ion-card-title>
         </ion-card-header>
-  
         <ion-card-content>
-          <!-- Campo de nombre -->
-          <ion-item>
-            <ion-label>Nombre:</ion-label>
-            <ion-text color="medium">Alejandro</ion-text>
-          </ion-item>
-  
-          <!-- Campo de apellido -->
-          <ion-item>
-            <ion-label>Apellido:</ion-label>
-            <ion-text color="medium">Zapata</ion-text>
-          </ion-item>
-  
-          <!-- Campo de teléfono -->
-          <ion-item>
-            <ion-label>Número de Teléfono:</ion-label>
-            <ion-text color="medium">+56 9 1234 5678</ion-text>
-          </ion-item>
-  
-          <!-- Campo de correo institucional -->
-          <ion-item>
-            <ion-label>Correo Institucional:</ion-label>
-            <ion-text color="medium">juan.perezduocuc.cl</ion-text>
-          </ion-item>
+          <div class="travel-info">
+            <h3>Hora de Salida:</h3>
+            <p>08:00 AM</p>
+    
+            <h3>Fecha del Viaje:</h3>
+            <p>20 de Septiembre, 2024</p>
+    
+            <h3>Lugar de Salida:</h3>
+            <p>Penco, La Heras</p>
+    
+            <h3>Lugar de Destino:</h3>
+            <p>Concepción, Tucapel con O'Higgins y Barros</p>
+    
+            <h3>Valor del Viaje:</h3>
+            <p>$2,000 por persona</p>
+          </div>
+        </ion-card-content>
+      
+    
+      <!-- Información del Conductor -->
+        <ion-card-header>
+          <ion-card-title>Información del Conductor</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="driver-info">
+            <!-- Foto del Conductor en formato circular -->
+            <ion-avatar class="driver-photo" style="margin-bottom: 20px;">
+              <img src="assets/img/driver.jpg" alt="Foto del Conductor" style="border-radius: 50%; width: 100px; height: 100px;">
+            </ion-avatar>
+    
+            <!-- Detalles del Conductor -->
+            <div class="driver-details">
+              <h3>Nombre del Conductor:</h3>
+              <p>Juan Pérez</p>
+    
+              <h3>Número Telefónico:</h3>
+              <p>+56 9 1234 5678</p>
+    
+              <h3>Marca del Auto:</h3>
+              <p>Hyundai Elantra</p>
+    
+              <h3>Patente del Auto:</h3>
+              <p>ABCD-1234</p>
+            </div>
+          </div>
         </ion-card-content>
       </ion-card>
-      <ion-button expand="block" type="submit" class="login-button" color="primary"[routerLink]="['/index']">
-        Cerrar sesion
-      </ion-button>
-    </div>
+    
+    
   </ion-content>
-  
+</div>
