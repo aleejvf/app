@@ -65,7 +65,7 @@
 <!-- comienza el contenido -->
 
   <ion-content class="ion-padding">
-    <h2 class="ion-text-center">Viaje solicitado</h2>
+    <h3 class="ion-text-center">Viaje solicitado</h3>
     <!-- Lista de viajes -->
     
 
@@ -77,19 +77,19 @@
         </ion-card-header>
         <ion-card-content>
           <div class="travel-info">
-            <h3>Hora de Salida:</h3>
+            <h2>Hora de Salida:</h2>
             <p>08:00 AM</p>
     
-            <h3>Fecha del Viaje:</h3>
+            <h2>Fecha del Viaje:</h2>
             <p>20 de Septiembre, 2024</p>
     
-            <h3>Lugar de Salida:</h3>
+            <h2>Lugar de Salida:</h2>
             <p>Penco, La Heras</p>
     
-            <h3>Lugar de Destino:</h3>
+            <h2>Lugar de Destino:</h2>
             <p>Concepción, Tucapel con O'Higgins y Barros</p>
     
-            <h3>Valor del Viaje:</h3>
+            <h2>Valor del Viaje:</h2>
             <p>$2,000 por persona</p>
           </div>
         </ion-card-content>
@@ -108,20 +108,24 @@
     
             <!-- Detalles del Conductor -->
             <div class="driver-details">
-              <h3>Nombre del Conductor:</h3>
+              <h2>Nombre del Conductor:</h2>
               <p>Juan Pérez</p>
     
-              <h3>Número Telefónico:</h3>
+              <h2>Número Telefónico:</h2>
               <p>+56 9 1234 5678</p>
     
-              <h3>Marca del Auto:</h3>
+              <h2>Marca del Auto:</h2>
               <p>Hyundai Elantra</p>
     
-              <h3>Patente del Auto:</h3>
+              <h2>Patente del Auto:</h2>
               <p>ABCD-1234</p>
             </div>
           </div>
         </ion-card-content>
+        <ion-button expand="block" color="danger"[routerLink]="['/index-us']">
+          Eliminar Viaje
+        </ion-button>
+        
       </ion-card>
     
     
