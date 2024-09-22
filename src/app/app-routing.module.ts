@@ -53,26 +53,12 @@ const routes: Routes = [
     path: 'desc-viajes-2-us',
     loadChildren: () => import('./pages/desc-viajes-2-us/desc-viajes-2-us.module').then( m => m.DescViajes2UsPageModule)
   },
-  {
-    path: 'verificacion-uc',
-    loadChildren: () => import('./pages/verificacion-uc/verificacion-uc.module').then( m => m.VerificacionUcPageModule)
-  },
-  {
-    path: 'soli-denegada-uc',
-    loadChildren: () => import('./pages/soli-denegada-uc/soli-denegada-uc.module').then( m => m.SoliDenegadaUcPageModule)
-  },
-  {
-    path: 'soli-aceptada-uc',
-    loadChildren: () => import('./pages/soli-aceptada-uc/soli-aceptada-uc.module').then( m => m.SoliAceptadaUcPageModule)
-  },
-  {
-    path: 'index-uc',
-    loadChildren: () => import('./pages/index-uc/index-uc.module').then( m => m.IndexUcPageModule)
-  },
+
   {
     path: 'crear-viaje-uc',
     loadChildren: () => import('./pages/crear-viaje-uc/crear-viaje-uc.module').then( m => m.CrearViajeUcPageModule)
-  },  {
+  },
+  {
     path: 'registro',
     loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
   },
@@ -80,6 +66,42 @@ const routes: Routes = [
     path: 'solicitud-us',
     loadChildren: () => import('./pages/solicitud-us/solicitud-us.module').then( m => m.SolicitudUsPageModule)
   },
+  {
+    path: 'index-adm',
+    loadChildren: () => import('./pages/index-adm/index-adm.module').then( m => m.IndexAdmPageModule)
+  },  {
+    path: 'reg-us-adm',
+    loadChildren: () => import('./pages/reg-us-adm/reg-us-adm.module').then( m => m.RegUsAdmPageModule)
+  },
+  {
+    path: 'reg-uc-adm',
+    loadChildren: () => import('./pages/reg-uc-adm/reg-uc-adm.module').then( m => m.RegUcAdmPageModule)
+  },
+  {
+    path: 'reg-viajes-adm',
+    loadChildren: () => import('./pages/reg-viajes-adm/reg-viajes-adm.module').then( m => m.RegViajesAdmPageModule)
+  },
+  {
+    path: 'det-viajes-adm',
+    loadChildren: () => import('./pages/det-viajes-adm/det-viajes-adm.module').then( m => m.DetViajesAdmPageModule)
+  },
+  {
+    path: 'det-us-adm',
+    loadChildren: () => import('./pages/det-us-adm/det-us-adm.module').then( m => m.DetUsAdmPageModule)
+  },
+  {
+    path: 'det-uc-adm',
+    loadChildren: () => import('./pages/det-uc-adm/det-uc-adm.module').then( m => m.DetUcAdmPageModule)
+  },
+  {
+    path: 'agregar-us-adm',
+    loadChildren: () => import('./pages/agregar-us-adm/agregar-us-adm.module').then( m => m.AgregarUsAdmPageModule)
+  },
+  {
+    path: 'solic-uc-adm',
+    loadChildren: () => import('./pages/solic-uc-adm/solic-uc-adm.module').then( m => m.SolicUcAdmPageModule)
+  },
+
 
 ];
 
