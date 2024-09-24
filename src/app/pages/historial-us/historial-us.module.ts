@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RegistroUcPageRoutingModule } from './registro-uc-routing.module';
+import { HistorialUsPageRoutingModule } from './historial-us-routing.module';
 
-import { RegistroUcPage } from './registro-uc.page';
+import { HistorialUsPage } from './historial-us.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RegistroUcPageRoutingModule
+    HistorialUsPageRoutingModule
   ],
-  declarations: [RegistroUcPage]
+  declarations: [HistorialUsPage]
 })
-export class RegistroUcPageModule {}
+export class HistorialUsPageModule {}

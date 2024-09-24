@@ -44,10 +44,6 @@ const routes: Routes = [
     path: 'info-uc',
     loadChildren: () => import('./pages/info-uc/info-uc.module').then( m => m.InfoUcPageModule)
   },
-  {
-    path: 'registro-uc',
-    loadChildren: () => import('./pages/registro-uc/registro-uc.module').then( m => m.RegistroUcPageModule)
-  },
   
   {
     path: 'desc-viajes-2-us',
@@ -73,6 +69,28 @@ const routes: Routes = [
     path: 'crear-viaje-uc',
     loadChildren: () => import('./pages/crear-viaje-uc/crear-viaje-uc.module').then( m => m.CrearViajeUcPageModule)
   },
+  {
+    path: 'vehicle-form',
+    loadChildren: () => import('./pages/vehicle-form/vehicle-form.module').then( m => m.VehicleFormPageModule)
+  },
+  {
+    path: 'historial-conductor',
+    loadChildren: () => import('./pages/historial-conductor/historial-conductor.module').then( m => m.HistorialConductorPageModule)
+  },
+  {
+    path: 'configuracion-vehiculo',
+    loadChildren: () => import('./pages/configuracion-vehiculo/configuracion-vehiculo.module').then( m => m.ConfiguracionVehiculoPageModule)
+  },
+  {
+    path: 'confi-vehiculo',
+    loadChildren: () => import('./pages/confi-vehiculo/confi-vehiculo.module').then( m => m.ConfiVehiculoPageModule)
+  },  {
+    path: 'historial-us',
+    loadChildren: () => import('./pages/historial-us/historial-us.module').then( m => m.HistorialUsPageModule)
+  },
+
+
+
 ];
 
 @NgModule({
