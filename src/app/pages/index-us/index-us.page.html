@@ -10,32 +10,36 @@
     <ion-list>
       <!-- Botón de Viajes -->
       <ion-item button [routerLink]="['/index-us']">
+        
+        <ion-icon slot="start" name="git-pull-request"></ion-icon>
         <ion-label>Viajes</ion-label>
+        
       </ion-item>
 
-            <!-- Botón de Viajes -->
+      <!-- Botón de Viajes solicitados -->
       <ion-item button [routerLink]="['/solicitud-us']">
+        <ion-icon slot="start" name="briefcase-outline"></ion-icon>
         <ion-label>Viajes solicitados</ion-label>
       </ion-item>
 
       <!-- Botón de Historial -->
       <ion-item button [routerLink]="['/viajes-us']">
+        <ion-icon slot="start" name="time-outline"></ion-icon>
         <ion-label>Historial de viajes</ion-label>
+ 
       </ion-item>
 
       <!-- Botón de Seguridad -->
       <ion-item button [routerLink]="['/seguridad-us']">
+        <ion-icon slot="start" name="shield-checkmark-outline"></ion-icon>
         <ion-label>Seguridad</ion-label>
       </ion-item>
 
-      <!-- Botón de Configuraciones -->
-      <ion-item button [routerLink]="['/confi-us']">
-        <ion-label>Configuraciones</ion-label>
-      </ion-item>
-
-      <!-- Botón de Modo Conductor con color diferente -->
+      <!-- Botón de Modo Conductor con color diferente y redondeado -->
       <ion-item button color="secondary" class="driver-mode-button" lines="none" [routerLink]="['/info-uc']">
+        <ion-icon slot="start" name="car-outline"></ion-icon>
         <ion-label>Modo Conductor</ion-label>
+   
       </ion-item>
     </ion-list>
   </ion-content>
@@ -69,9 +73,11 @@
     
     <!-- Filtros -->
   <ion-grid>
-    <h6 class="ion-text-center" style="color: gray;">Filtrar por comuna</h6>
-    
+ 
     <ion-row>
+      <ion-col size="6">
+        <h6 class="ion-text-center" style="color: gray;">Filtrar por comuna</h6>
+      </ion-col>
       <ion-col size="6">
         <ion-item>
           <ion-label>Destino:</ion-label>
@@ -85,19 +91,7 @@
           </ion-select>
         </ion-item>
       </ion-col>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label>Salida:</ion-label>
-          <ion-select >
-            <ion-select-option>Duoc uc</ion-select-option>
-            <ion-select-option>Penco</ion-select-option>
-            <ion-select-option>Hualpén</ion-select-option>
-            <ion-select-option>Concepción</ion-select-option>
-            <ion-select-option>Talcahuano</ion-select-option>
-            <ion-select-option>San Pedro de la Paz</ion-select-option>
-          </ion-select>
-        </ion-item>
-      </ion-col>
+     
     </ion-row>
   </ion-grid>
     

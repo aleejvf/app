@@ -12,10 +12,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   
-  {
-    path: 'login-us',
-    loadChildren: () => import('./pages/login-us/login-us.module').then( m => m.LoginUsPageModule)
-  },
+
   {
     path: 'index-us',
     loadChildren: () => import('./pages/index-us/index-us.module').then( m => m.IndexUsPageModule)
@@ -24,10 +21,7 @@ const routes: Routes = [
     path: 'viajes-us',
     loadChildren: () => import('./pages/viajes-us/viajes-us.module').then( m => m.ViajesUsPageModule)
   },
-  {
-    path: 'confi-us',
-    loadChildren: () => import('./pages/confi-us/confi-us.module').then( m => m.ConfiUsPageModule)
-  },
+
   {
     path: 'desc-viaje-us',
     loadChildren: () => import('./pages/desc-viaje-us/desc-viaje-us.module').then( m => m.DescViajeUsPageModule)
@@ -53,11 +47,6 @@ const routes: Routes = [
     path: 'desc-viajes-2-us',
     loadChildren: () => import('./pages/desc-viajes-2-us/desc-viajes-2-us.module').then( m => m.DescViajes2UsPageModule)
   },
-
-  {
-    path: 'crear-viaje-uc',
-    loadChildren: () => import('./pages/crear-viaje-uc/crear-viaje-uc.module').then( m => m.CrearViajeUcPageModule)
-  },
   {
     path: 'registro',
     loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
@@ -69,7 +58,8 @@ const routes: Routes = [
   {
     path: 'index-adm',
     loadChildren: () => import('./pages/index-adm/index-adm.module').then( m => m.IndexAdmPageModule)
-  },  {
+  },
+  {
     path: 'reg-us-adm',
     loadChildren: () => import('./pages/reg-us-adm/reg-us-adm.module').then( m => m.RegUsAdmPageModule)
   },
@@ -100,6 +90,14 @@ const routes: Routes = [
   {
     path: 'solic-uc-adm',
     loadChildren: () => import('./pages/solic-uc-adm/solic-uc-adm.module').then( m => m.SolicUcAdmPageModule)
+  },
+  {
+    path: 'edit-perf-us',
+    loadChildren: () => import('./pages/edit-perf-us/edit-perf-us.module').then( m => m.EditPerfUsPageModule)
+  },
+  {
+    path: 'olvido-contrasena',
+    loadChildren: () => import('./pages/olvido-contrasena/olvido-contrasena.module').then( m => m.OlvidoContrasenaPageModule)
   },
 
 

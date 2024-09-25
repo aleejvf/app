@@ -1,45 +1,50 @@
-<<ion-menu contentId="main-content" menuId="m7" side="start">
+<ion-menu contentId="main-content" menuId="m7" side="start">
   <ion-header>
     <ion-toolbar color="primary">
       <ion-title>Menú</ion-title>
     </ion-toolbar>
   </ion-header>
-  
+
   <ion-content class="ion-padding">
     <!-- Botones del menú -->
     <ion-list>
       <!-- Botón de Viajes -->
       <ion-item button [routerLink]="['/index-us']">
+        
+        <ion-icon slot="start" name="git-pull-request"></ion-icon>
         <ion-label>Viajes</ion-label>
+        
       </ion-item>
 
-            <!-- Botón de Viajes -->
+      <!-- Botón de Viajes solicitados -->
       <ion-item button [routerLink]="['/solicitud-us']">
+        <ion-icon slot="start" name="briefcase-outline"></ion-icon>
         <ion-label>Viajes solicitados</ion-label>
       </ion-item>
 
       <!-- Botón de Historial -->
       <ion-item button [routerLink]="['/viajes-us']">
+        <ion-icon slot="start" name="time-outline"></ion-icon>
         <ion-label>Historial de viajes</ion-label>
+ 
       </ion-item>
 
       <!-- Botón de Seguridad -->
       <ion-item button [routerLink]="['/seguridad-us']">
+        <ion-icon slot="start" name="shield-checkmark-outline"></ion-icon>
         <ion-label>Seguridad</ion-label>
       </ion-item>
 
-      <!-- Botón de Configuraciones -->
-      <ion-item button [routerLink]="['/confi-us']">
-        <ion-label>Configuraciones</ion-label>
-      </ion-item>
-
-      <!-- Botón de Modo Conductor con color diferente -->
+      <!-- Botón de Modo Conductor con color diferente y redondeado -->
       <ion-item button color="secondary" class="driver-mode-button" lines="none" [routerLink]="['/info-uc']">
+        <ion-icon slot="start" name="car-outline"></ion-icon>
         <ion-label>Modo Conductor</ion-label>
+   
       </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
+
 
 
 <!-- Contenido principal -->
@@ -107,8 +112,9 @@
     
       <!-- Botones -->
       <div class="button-group">
-        <ion-button  color="primary" [routerLink]="['/solicitud-us']">Solicitar Viaje</ion-button>
-        <ion-button  color="light" [routerLink]="['/index-us']">Cerrar</ion-button>
+        <ion-button id="present" color="primary" >solicitar viaje</ion-button>
+        <ion-alert trigger="present" class="custom-alert" header="¿Seguro qieres solicitar el viaje?" [buttons]="alertButtons"></ion-alert>
+        <ion-button  color="light" [routerLink]="['/index-us']">Cancelar</ion-button>
       </div>
     </ion-card-content>
     

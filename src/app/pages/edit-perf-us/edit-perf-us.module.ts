@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ConfiUsPageRoutingModule } from './confi-us-routing.module';
+import { EditPerfUsPageRoutingModule } from './edit-perf-us-routing.module';
 
-import { ConfiUsPage } from './confi-us.page';
+import { EditPerfUsPage } from './edit-perf-us.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ConfiUsPageRoutingModule
+    EditPerfUsPageRoutingModule
   ],
-  declarations: [ConfiUsPage]
+  declarations: [EditPerfUsPage]
 })
-export class ConfiUsPageModule {}
+export class EditPerfUsPageModule {}
