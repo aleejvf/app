@@ -5,9 +5,37 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">historial-conductor</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-content class="ion-padding">
+    <h2 class="ion-text-center">Historial de viajes </h2>
+    <!-- Lista de viajes -->
+    <ion-list>
+      <!-- Viaje 1 -->
+      <ion-item class="viaje">
+        <ion-label>
+          <P>FINALIZADO</P>
+          <h3>Fecha de Salida: 20/09/24 - 08:00 AM</h3>
+          <p>Lugar de Destino: Penco, la heras</p>
+          <p>Lugar de Salida: Duoc uc</p>
+          <p>Valor del Viaje: $3,000 por persona</p>
+        </ion-label>
+        <ion-icon name="chevron-forward-outline" slot="end" class="travel-icon" [routerLink]="['/desc-viajes-2-us']"></ion-icon>
+      </ion-item>
+
+      <!-- Viaje 2 -->
+      <ion-item class="viaje">
+        <ion-label>
+          <p>FINALIZADO</p>
+          <h3>Fecha de Salida: 20/09/24 - 08:00 AM</h3>
+          <p>Lugar de Destino: hualpen la floresta 3</p>
+          <p>Lugar de Salida: Duoc uc</p>
+          <p>Valor del Viaje: $1,000 por persona</p>
+        </ion-label>
+        <ion-icon name="chevron-forward-outline" slot="end" class="travel-icon" [routerLink]="['/desc-viajes-2-us']"></ion-icon>
+      </ion-item>
+
+      
+      
+      <!-- Agrega más viajes aquí si es necesario -->
+    </ion-list>
+  </ion-content>
 </ion-content>
