@@ -17,7 +17,7 @@ export class EditPerfUsPage implements OnInit {
       cssClass: 'alert-button-confirm',
       handler: () => {
         // Redirigir a la página /index-us cuando se presiona "Yes"
-        this.router.navigate(['/index-us']);
+        this.router.navigate(['/perfil-us']);
       },
     },
   ];
