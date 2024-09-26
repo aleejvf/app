@@ -38,10 +38,6 @@ const routes: Routes = [
     path: 'info-uc',
     loadChildren: () => import('./pages/info-uc/info-uc.module').then( m => m.InfoUcPageModule)
   },
-  {
-    path: 'registro-uc',
-    loadChildren: () => import('./pages/registro-uc/registro-uc.module').then( m => m.RegistroUcPageModule)
-  },
   
   {
     path: 'desc-viajes-2-us',
